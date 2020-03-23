@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="UTF-8" /> 
+		<title>Hello Thymeleaf</title> 
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head> 
+	<body> 
+		<h1 th:each="each : ${list}" th:text="${each}"></h1> 
+		<div id="app">
+		  {{ message }}
+		</div>
+		
+	</body> 
+	<script>
+		var app = new Vue({
+		  el: '#app',
+		  data: {
+		    message: '안녕하세요 Vue!'
+		  }
+		})
+	</script>
+</html>
+
+
